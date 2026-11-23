@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+</head>
+<body>
+  <h1>Calculadora</h1>
+  <p>Solo enteros entre -99999 y 99999.</p>
+  <form action="/calcular" method="get">
+    <input type="number" name="a" min="-99999" max="99999" step="1" required>
+    <select name="op">
+      <option value="suma">+ (suma)</option>
+      <option value="resta">- (resta)</option>
+      <option value="multiplicacion">× (multiplicación)</option>
+      <option value="potencia">^ (potencia)</option>
+    </select>
+    <input type="number" name="b" min="-99999" max="99999" step="1" required>
+    <button type="submit">Calcular</button>
+  </form>
+</body>
+</html>
